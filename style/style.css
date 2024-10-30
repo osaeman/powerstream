@@ -747,7 +747,7 @@ footer {
   margin: 25px 0 25px 0;
 }
 
-.btn-style-3 a {
+.btn-style-4 a {
   background-color: white;
   border: 2px solid var(--dark-green);
   color: var(--dark-green);
@@ -756,7 +756,7 @@ footer {
   transition: all 0.5s ease-in-out;
 }
 
-.btn-style-3 a:hover {
+.btn-style-4 a:hover {
   background-color: var(--amber-clr);
   border: 2px solid transparent;
   color: white;
