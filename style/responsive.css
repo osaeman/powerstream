@@ -1,0 +1,332 @@
+@media (max-width: 1200px) {
+  .header-nav > nav > span > a {
+    font-size: 1.4rem;
+    padding: 10px 7px;
+  }
+  .header-logo a span {
+    font-size: 1.8rem;
+  }
+  .header-logo a img {
+    width: 40px;
+  }
+  .header-flexbox {
+    padding: 15px 0;
+  }
+  .header-nav {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: block;
+    font-size: 2.7rem;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-section-slide-content h2 {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+  .hero-section-slide-content p {
+    font-size: 1.9rem;
+  }
+  .hero-section-slide-content button a {
+    font-size: 1.6rem;
+  }
+  .football-animation {
+    right: 13%;
+    top: 70%;
+    width: 80px;
+    height: 80px;
+    transform: translateX(13%) rotate(1020deg);
+  }
+  @keyframes slideright {
+    0% {
+      opacity: 0.8;
+      right: -10%;
+      transform: translateX(13%) rotate(0deg);
+    }
+    100% {
+      opacity: 1;
+      right: 13%;
+      transform: translateX(13%) rotate(1020deg);
+    }
+  }
+  .player-animation {
+    width: 240px;
+    height: 240px;
+    top: 55%;
+    transform: translate(-70%, -55%);
+  }
+  @keyframes slideTop {
+    0% {
+      top: 0;
+      transform: translate(-70%, -55%);
+    }
+    100% {
+      top: 55%;
+      transform: translate(-70%, -55%);
+    }
+  }
+
+  .view-features-section-flexbox {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .view-features-section-flexbox-item {
+    padding: 60px 4%;
+  }
+
+  .selected-works p {
+    width: 80%;
+  }
+  .costumize-section-flexbox {
+    grid-column-gap: 20px;
+  }
+  .costumize-section > p {
+    width: 80%;
+  }
+  .testimonial-section-container > p {
+    width: 80%;
+  }
+  .selected-works-flexbox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .selected-works-flexbox div {
+    height: 280px;
+  }
+  .newsletter-section-flexbox {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 50px;
+  }
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 45px;
+  }
+}
+@media (max-width: 786px) {
+  .hero-section {
+    height: 80vh;
+  }
+  .hero-section-slide {
+    height: 80vh !important;
+  }
+  .hero-section-slide > img {
+    height: 80vh !important;
+  }
+  .hero-section-slide-content h2 {
+    font-size: 5rem;
+    line-height: 6.3rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+  .costumize-section-flexbox {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 50px;
+  }
+  .box {
+    width: 50px;
+    height: 150px;
+    bottom: 10px;
+  }
+  .ball {
+    width: 50px;
+    height: 50px;
+  }
+  @keyframes bounce {
+    50% {
+      transform: translateY(80px);
+    }
+  }
+  .football-animation {
+    width: 60px;
+    height: 60px;
+    top: 75%;
+  }
+
+  .player-animation {
+    width: 200px;
+    height: 240px;
+    top: 65%;
+    transform: translate(-70%, -65%);
+  }
+  @keyframes slideTop {
+    0% {
+      top: 0;
+      transform: translate(-70%, -65%);
+    }
+    100% {
+      top: 65%;
+      transform: translate(-70%, -65%);
+    }
+  }
+
+  .costumize-section-flexbox-item div {
+    height: 380px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .counter-section {
+    padding: 50px 0;
+  }
+  .counter-section-flexbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+  }
+  .counter-container img {
+    width: 80px;
+  }
+  .counter-container div {
+    font-size: 3.1rem;
+    margin: 15px 0 0 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-logo a span {
+    font-size: 1.5rem;
+  }
+  .header-flexbox {
+    padding: 12px 0;
+  }
+
+  .hero-section {
+    height: 75vh;
+  }
+  .hero-section-slide {
+    height: 75vh !important;
+  }
+  .hero-section-slide > img {
+    height: 75vh !important;
+  }
+  .hero-section-slide-content h2 {
+    font-size: 3.8rem;
+    line-height: 4.6rem;
+  }
+  .hero-section-slide-content p {
+    font-size: 1.7rem;
+    width: 90%;
+  }
+
+  .hero-section-slide-content button a {
+    font-size: 1.4rem;
+  }
+
+  .football-animation {
+    width: 50px;
+    height: 50px;
+    top: 90%;
+    right: 11%;
+  }
+  @keyframes slideright {
+    0% {
+      opacity: 0.8;
+      right: -10%;
+      transform: translateX(11%) rotate(0deg);
+    }
+    100% {
+      opacity: 1;
+      right: 13%;
+      transform: translateX(11%) rotate(1020deg);
+    }
+  }
+
+  .player-animation {
+    width: 160px;
+    height: 160px;
+    top: 85%;
+    transform: translate(-75%, -85%);
+  }
+  @keyframes slideTop {
+    0% {
+      top: 0;
+      transform: translate(-75%, -85%);
+    }
+    100% {
+      top: 85%;
+      transform: translate(-75%, -85%);
+    }
+  }
+
+  .view-features-section-flexbox-item button a {
+    font-size: 1.3rem;
+    padding: 13px 20px;
+  }
+  .selected-works h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+  .selected-works p {
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    width: 92%;
+    margin: 15px auto 30px auto;
+  }
+  .costumize-section > h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+  .costumize-section > p {
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    width: 92%;
+    margin: 15px auto 30px auto;
+  }
+  .testimonial-section-container > h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+  .testimonial-section-container > p {
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    width: 92%;
+    margin: 15px auto 30px auto;
+  }
+  .selected-works-flexbox {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .selected-works-flexbox div {
+    height: 280px;
+  }
+  .newsletter-section-flexbox-left > h3 {
+    font-size: 2.3rem;
+  }
+
+  .newsletter-section-flexbox-left > p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+  .newsletter-section-flexbox-left-bottom {
+    margin: 30px 0 0 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 30px;
+  }
+  .counter-container img {
+    width: 70px;
+  }
+  .counter-container div {
+    font-size: 2.7rem;
+    margin: 15px 0 0 0;
+  }
+  .counter-container span {
+    font-size: 1.4rem;
+  }
+  .footer-top {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 35px;
+  }
+  .footer-top-right div img {
+    height: 120px;
+  }
+}
