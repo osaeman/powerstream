@@ -22,12 +22,7 @@
   .why-section-gird {
     grid-column-gap: 10px;
   }
-  .LR-split-section-grid-right {
-    padding: 0 8%;
-  }
-  .RL-split-section-grid-left {
-    padding: 0 8%;
-  }
+
   .footer-top-left img {
     width: 80%;
   }
@@ -201,7 +196,8 @@
     grid-template-columns: repeat(1, 1fr);
   }
   .why-section-gird div img {
-    aspect-ratio: 1/ 0.5;
+    height: 270px !important;
+    width: 100%;
   }
   .experts-section-top-flex {
     flex-direction: column;
@@ -237,11 +233,16 @@
     grid-template-columns: repeat(1, 1fr);
   }
   .LR-split-section-grid img {
-    height: 360px;
-    min-height: 360px;
+    height: 300px;
+    min-height: 300px;
   }
   .LR-split-section-grid-right {
-    padding: 70px 4%;
+    position: relative;
+    padding: 70px 0;
+  }
+  .LR-split-section-grid-right > div > div {
+    width: 100%;
+    margin: auto;
   }
   .btn-style-3 a {
     padding: 11px 23px;
@@ -305,7 +306,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding: 0 4%;
     min-height: 450px;
     width: 100%;
   }
@@ -319,7 +319,10 @@
   .RL-split-section-grid-left > div h1,
   .RL-split-section-grid-left > div p {
     color: white;
+  }
+  .RL-split-section-grid-left > div > div {
     width: 80%;
+    margin-right: auto;
   }
   .RL-split-section-grid-left::before {
     position: absolute;
@@ -430,13 +433,13 @@
     font-size: 2.4rem;
   }
   .hero-section {
-    height: 60vh;
+    height: 50vh;
   }
   .hero-section-slide {
-    height: 60vh !important;
+    height: 50vh !important;
   }
   .hero-section-slide > img {
-    height: 60vh !important;
+    height: 50vh !important;
   }
   .h1 {
     font-size: 3.3rem;

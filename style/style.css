@@ -380,6 +380,9 @@ header {
   width: 100%;
   height: calc(100vh - 65px);
 }
+.hero-section .swiper {
+  position: relative !important;
+}
 .hero-section-slide {
   height: calc(100vh - 65px) !important;
   width: 100%;
@@ -392,8 +395,9 @@ header {
   object-position: center;
 }
 
-.hero-section-slide-content-container {
+.hero-section-slide::after {
   background-color: rgba(0, 30, 10, 0.7);
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -578,11 +582,13 @@ header {
 /* -------Split Section---------- */
 .LR-split-section {
   margin: 140px auto 0 auto;
+  background-color: var(--grey-clr);
 }
 
 .LR-split-section-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  position: relative;
 }
 
 .LR-split-section-grid img {
@@ -593,13 +599,25 @@ header {
 }
 
 .LR-split-section-grid-right {
-  padding: 0 calc((100vw - 1250px) / 2) 0 calc((100vw - 1150px) / 2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.LR-split-section-grid-right > div {
   display: flex;
   flex-direction: column;
-  background-color: var(--grey-clr);
   justify-content: center;
+  max-width: 1200px;
+  width: 92%;
+  margin: 0 auto;
+  height: 100%;
 }
-
+.LR-split-section-grid-right > div > div {
+  width: 40%;
+  margin-left: auto;
+}
 .LR-split-section-grid-right p {
   margin: 15px 0 25px 0;
 }
@@ -726,8 +744,11 @@ footer {
 .RL-split-section-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  position: relative;
 }
-
+.RL-split-section-grid-right-img {
+  grid-column: 2;
+}
 .RL-split-section-grid img {
   object-fit: cover;
   object-position: center;
@@ -736,14 +757,25 @@ footer {
 }
 
 .RL-split-section-grid-left {
-  padding: 0 calc((100vw - 1250px) / 2) 0 calc((100vw - 1150px) / 2);
-  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.RL-split-section-grid-left > div {
   display: flex;
   flex-direction: column;
-  background-color: white;
   justify-content: center;
+  max-width: 1200px;
+  width: 92%;
+  margin: 0 auto;
+  height: 100%;
 }
-
+.RL-split-section-grid-left > div > div {
+  width: 40%;
+  margin-right: auto;
+}
 .RL-split-section-grid-left p {
   margin: 25px 0 25px 0;
 }
