@@ -18,10 +18,11 @@ slider_close_btn.addEventListener("click", () => {
 });
 
 const mobile_nav_link = document.querySelectorAll(".mobile-nav-link");
+const clickable_link = document.querySelectorAll(".clickable-link");
 const mobile_nav_link_i = document.querySelectorAll(".mobile-nav-link-i");
 const mobile_nav_dropdown = document.querySelectorAll(".mobile-nav-dropdown");
 
-mobile_nav_link.forEach((item, index) => {
+clickable_link.forEach((item, index) => {
   item.addEventListener("click", () => {
     mobile_nav_dropdown[index].classList.toggle("mobile-nav-dropdown-show");
     if (
